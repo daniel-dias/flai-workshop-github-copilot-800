@@ -10,6 +10,8 @@ class UserSerializer(serializers.ModelSerializer):
 
 
 class TeamSerializer(serializers.ModelSerializer):
+    members = serializers.ListField(child=serializers.CharField(), required=False)
+    
     class Meta:
         model = Team
         fields = ['_id', 'name', 'members', 'total_points']
