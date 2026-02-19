@@ -18,6 +18,7 @@ from django.urls import path, include
 from rest_framework import routers
 from .views import UserViewSet, TeamViewSet, ActivityViewSet, LeaderboardViewSet, WorkoutViewSet
 
+# API will be accessible via Codespace URL: https://<codespace-name>-8000.app.github.dev/api/
 # Create a router and register our viewsets
 router = routers.DefaultRouter()
 router.register(r'users', UserViewSet)

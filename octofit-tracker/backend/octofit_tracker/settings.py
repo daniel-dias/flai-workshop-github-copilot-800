@@ -27,6 +27,7 @@ SECRET_KEY = 'django-insecure-@ttqjaw&l-)#u-pi7rjblr$tv8drb=f*+-d9gy6h%aw1sb6mse
 DEBUG = True
 
 # Codespace configuration
+# Expected URL format: https://<codespace-name>-8000.app.github.dev/api/
 CODESPACE_NAME = os.getenv('CODESPACE_NAME')
 GITHUB_CODESPACES_PORT_FORWARDING_DOMAIN = os.getenv('GITHUB_CODESPACES_PORT_FORWARDING_DOMAIN', 'app.github.dev')
 
